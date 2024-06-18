@@ -1,4 +1,4 @@
-package dz2
+package internal
 
 import (
 	"log"

@@ -1,4 +1,4 @@
-package dz1
+package internal
 
 import "fmt"
 
@@ -13,6 +13,11 @@ type AnimalMilk interface {
 
 type Cat struct{}
 type Dog struct{}
+type Cow struct{ milk int }
+type Goat struct{ milk int }
+type Chicken struct{ egg int }
+type Ostrich struct{ egg int }
+type Quail struct{ egg int }
 
 func (d Dog) MakeNoise() {
 	fmt.Println("гавгав!")
@@ -21,12 +26,6 @@ func (d Dog) MakeNoise() {
 func (c Cat) MakeNoise() {
 	fmt.Println("мурмяу")
 }
-
-type Cow struct{ milk int }
-type Goat struct{ milk int }
-type Chicken struct{ egg int }
-type Ostrich struct{ egg int }
-type Quail struct{ egg int }
 
 func (c Cow) MakeNoise() {
 	fmt.Println("Корова здесь")
